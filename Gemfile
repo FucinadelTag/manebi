@@ -2,10 +2,14 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.2.2"
+gem "middleman"
 
 # FdtTools
 gem "fdt_middleman_tools", ">= 1.0.0"
+
+# Contentful
+#gem "contentful_middleman"
+gem 'contentful'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
