@@ -1,0 +1,82 @@
+.wufoo li span label {
+display: none;
+
+}
+.wufoo label.choice {
+display:block;
+font-size: 0.85em;
+}
+.wufoo legend.desc {
+display: none;
+
+}
+.wufoo ul {background: url(images/woman2.png) no-repeat right top transparent;}
+form li.buttons {text-align: center;}
+#container, html.embed {background: none;}
+
+textarea.textarea {
+width: 278px;
+min-width: 98%;
+max-width: 98%;
+}
+textarea.small {
+font-size: 0.8em;
+}
+
+/* BUTTON FORM  */
+	input#saveForm,
+	input.yellow[type="submit"],
+	input.yellow[type="reset"],
+	input.yellow[type="button"] {
+		padding: 8px 16px 6px 16px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;	  
+	  display: inline-block;
+	  font-size: 16px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(255, 255, 255, .75);
+	  cursor: pointer;
+	
+	  line-height: 21px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #a07100;
+		background: #eee; /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,237,0,.95) 0%, rgba(253,197,0,.95) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,197,0,.95)), color-stop(100%,rgba(250,220,100,.95))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,237,0,.95) 0%,rgba(253,197,0,.95) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,237,0,.95) 0%,rgba(253,197,0,.95) 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,237,0,.95) 0%,rgba(253,197,0,.95) 100%); /* IE10+ */
+		background: linear-gradient(top, rgba(255,237,0,.95) 0%,rgba(253,197,0,.95) 100%); /* W3C */
+		border: 1px solid #f8c600;
+		border-top: 1px solid #f8c600;
+		border-left: 1px solid #f8c600;
+		box-shadow: 3px 3px 6px #ccc;
+		
+	}
+
+	input#saveForm:hover,
+	button.yellow:hover,
+	input.yellow[type="submit"]:hover,
+	input.yellow[type="reset"]:hover,
+	input.yellow[type="button"]:hover,
+	input#saveForm:active,
+  	button.yellow:active,
+	input.yellow[type="submit"]:active,
+	input.yellow[type="reset"]:active,
+	input.yellow[type="button"]:active {
+		color: #694704;
+		background: #eee; /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,240,140,.95) 0%, rgba(250,220,100,.95) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,240,140,.95)), color-stop(100%,rgba(250,220,100,.95))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,240,140,.95) 0%,rgba(250,220,100,.95) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,240,140,.95) 0%,rgba(250,220,100,.95) 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,240,140,.95) 0%,rgba(250,220,100,.95) 100%); /* IE10+ */
+		background: linear-gradient(top, rgba(255,240,140,.95) 0%,rgba(250,220,100,.95) 100%); /* W3C */
+		border: 1px solid #e0a60b;
+		border-top: 1px solid #e0a60b;
+		border-left: 1px solid #e0a60b;
+		box-shadow: 0px 0px 0px #ccc;
+		}
+		

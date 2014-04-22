@@ -1,0 +1,16 @@
+#privacy {font-size: 100%;}
+#privacy h1, #privacy h2, #privacy h3, #privacy h4 {
+    color: #000;
+    background: none;
+    margin:0 0 15px 0;
+    font-family: Arial, sans-serif;
+    opacity: 1;
+    padding: 0;
+    line-height: normal;
+    
+}
+#privacy h1 {font-size: 30px;}
+#privacy h2 {font-size: 24px;}
+#privacy h3 {font-size: 18px;}
+#privacy h4 {font-size: 14px;}
+#privacy li {margin-left: 20px;}

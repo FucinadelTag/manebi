@@ -1,0 +1,53 @@
+#corsi h1, #corsi h2, #corsi h3, #corsi h4 {font-family: 'Helvetica', Arial, sans-serif; line-height: normal;}
+#corsi h1 {font-size: 32px;}
+#corsi h2 {font-size: 24px; }
+#corsi h3 {font-size: 18px; }
+#corsi h4 {font-size: 15px; }
+#intro {font-size: 0.9em; text-align: left; }
+#intro h1{font-size: 2.5em; margin-bottom: 0; }
+#intro h2{font-family: 'Helvetica', Arial, sans-serif; border-bottom: 1px solid #ccc; font-size: 1.3em; font-weight: normal; margin-bottom: 20px; padding-bottom: 10px; }
+em {font-style: italic; }
+.b-border {border-bottom:1px dotted #ccc; padding: 10px 0; margin-bottom: 15px;}
+
+img {max-width: 100%; -ms-interpolation-mode: bicubic;}
+span.title_block {border-bottom: 2px solid #000; padding: 0 0 10px 0; font-size: 2em; display: block; margin: 20px 0;}
+
+#right_column {padding-left: 20px; }
+span.name {font-weight: bold; display: block; }
+span.role {font-style: italic; opacity: 0.8; display: block; font-size: 95%; margin-bottom: 10px;}
+#relatori {font-size: 90%;}
+#about {font-size: 90%;}
+#about p{margin-bottom: 6px;}
+ul.accordion {margin: 5px 0;}
+#data_block {font-size: 0.9em;}
+#data_block strong.title {display: block; margin-bottom: 5px;}
+form {
+max-width: 500px;
+width: 80%;
+}
+.form { border: 1px solid #ccc; box-shadow: 3px 3px 6px #ccc; margin: 20px 0 30px 0;}
+
+/* eventi futuri */
+#head .nine img { float: right;}
+#futuri p { font-size: 0.9em;}
+#futuri img { padding: 1px; border:1px solid #ccc;}
+/* eventi passati */
+#passati { font-size: 90%;}
+#passati h1 { font-size: 1.5em; margin-bottom: 4px;}
+#passati h2 { font-size: 140%;}
+.border-right {padding: 0 15px 0 0; border-right: 1px dotted #ccc; }
+#passati .data { font-size: 1.2em;}
+
+pre {margin: 0; padding: 0; font-weight: bold; color: #444; margin-bottom: 10px;}
+
+*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+       
+       div#right_column {padding-left: 0px; }
+            }
+  
+  

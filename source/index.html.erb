@@ -2,9 +2,59 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="tabs" class="sixteen columns">
+  <ul>
+    <% contentful.entries('content_type'=> '2Wm4aamxXyUgcc8uwOCEwk').each do |continente| %>
+        <% if contentful.entries('content_type'=> '49iyNIuc1iqmWi8yIOo2oE', 'fields.continente.sys.id'=>continente.id).count > 0 %>
+            <li><a href="#tabs-<%= continente.nome %>"><%= continente.nome %></a></li>
+        <% end %>
+    <% end %>
+  </ul>
+
+
+
+    <% contentful.entries('content_type'=> '2Wm4aamxXyUgcc8uwOCEwk').each do |continente| %>
+
+        <% if contentful.entries('content_type'=> '49iyNIuc1iqmWi8yIOo2oE', 'fields.continente.sys.id'=>continente.id).count > 0 %>
+
+            <div id="tabs-<%= continente.nome %>">
+                            <% contentful.entries('content_type'=> '49iyNIuc1iqmWi8yIOo2oE', 'fields.continente.sys.id'=>continente.id).each do |nazione| %>
+
+                                <% if contentful.entries('content_type'=> '1AQlCVrzYEC6IuWwI8u4Cs', 'fields.nazione.sys.id'=>nazione.id).count > 0 %>
+
+                                    <div class="nazione">
+                                        <%= nazione.nome %>
+                                    </div>
+
+                                    <% contentful.entries('content_type'=> '1AQlCVrzYEC6IuWwI8u4Cs', 'fields.nazione.sys.id'=>nazione.id).each do |negozio| %>
+
+                                        <div class="fifteen columns negozio" >
+                                            <div class="five columns">
+                                            <h5><%= negozio.nome %></h5>
+                                                <p>
+                                                    <%= negozio.indirizzo %>
+                                                    <%= negozio.citt %> - <%= negozio.provincia %><br />
+                                                    <% if negozio.telefono %>
+                                                        <span class="little italic">
+                                                            <em>Phone: <%= negozio.telefono %></em>
+                                                        </span>
+
+                                                    <% end %>
+                                                </p>
+                                            </div>
+                                            <div class="nine columns">
+                                                    <img src="http://ojw.dev.openstreetmap.org/StaticMap/?lat=<%= negozio.coordinate.lat %>&lon=<%= negozio.coordinate.lon %>&z=17&mode=Export&mlat0=<%= negozio.coordinate.lat %>&mlon0=<%= negozio.coordinate.lon %>&show=1">
+
+                                            </div>
+
+                                        </div>
+
+                                    <% end %>
+                                <% end %>
+
+                            <% end %>
+            </div>
+        <% end %>
+    <% end %>
+
+</div>

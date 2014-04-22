@@ -89,6 +89,14 @@ activate :livereload
 
 helpers FdtMiddlemanTools
 
+activate :contentful do |f|
+  # The Space ID of your Contentful space
+  f.space = 'tdl48ui395dy'
+
+  # The access token (API Key) for the Content Delivery API
+  f.access_token = '38c1d634d857136610c1acc64f60cfe00d56e4e2f6bb2f601c17974e5a090288'
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

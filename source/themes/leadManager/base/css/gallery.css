@@ -1,0 +1,5 @@
+.title_gallery {position: absolute; width: auto; padding: 10px 20px 10px 50px; background: #fff; opacity: 0.9; margin: 30px 0 0 0;}
+.black {background: #000; height: 250px; padding: 3px;}
+.abstract_list {font-size: 0.9em; line-height: 1.1em; color: #777;}
+.columns span.img_dida {font-size: 0.85em; color: #777; padding: 5px 0 15px 0; line-height: normal; border-bottom:1px solid #ccc; margin-bottom: 10px;}
+.columns p.data {font-size: 0.85em; color: #777; padding: 5px 0 15px 0; line-height: normal; border-bottom:1px solid #ccc; margin-bottom: 10px;}

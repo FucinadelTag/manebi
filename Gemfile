@@ -11,6 +11,9 @@ gem "fdt_middleman_tools", ">= 1.0.0"
 #gem "contentful_middleman"
 gem 'contentful'
 
+gem "contentful_middleman"
+gem "middleman-blog"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
